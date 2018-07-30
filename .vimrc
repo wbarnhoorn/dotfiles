@@ -1,32 +1,51 @@
+"" Tell pathogen to enable plugins
 execute pathogen#infect()
 execute pathogen#helptags()
+
+"" Syntax, indent, numberline, mouse support and misc
 syntax on
 filetype plugin indent on
 set number relativenumber
-set t_Co=256
-colo mycontrast
+set mouse=a
+set autoread
+set so=5
+set wrap
+
+"" Auto indent and smart indent
+set ai
+set si
+
+"" Clipboard and sane paste
 set pastetoggle=<F2>
 set clipboard=unnamed
-set mouse=a
-map <C-n> :NERDTreeToggle<CR>
-set noshowmode
+
+"" Case insensitive search
+set ignorecase
+set smartcase
+
+"" Color settings
+set t_Co=256
+colo mycontrast
+
+"" Some powerline options
 let g:airline_powerline_fonts = 1
 let g:airline_theme='jellybeans'
 let g:bufferline_echo = 0
-let g:pymode_options_colorcolumn = 0
-let g:pymode_rope_completion = 0
-let g:pymode_python = 'python3'
-let g:pymode_rope = 0
+set noshowmode
 set ttimeoutlen=10
-set autoread
-set so=5
-set ignorecase
-set smartcase
-set ai
-set si
-set wrap
+
+"" Some pymode options
+let g:pymode_options_colorcolumn = 0
+let g:pymode_python = 'python3'
+
+"" Disable pymode rope completions so it doesn't clash with YouCompleteMe
+let g:pymode_rope = 0
+let g:pymode_rope_completion = 0
+
+"" Mappings for buffer navigation, NERDtree and shortcut to run current .py
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+map <C-n> :NERDTreeToggle<CR>
 autocmd FileType python nnoremap <buffer> <F8> :exec '!python' shellescape(@%, 1)<CR>
