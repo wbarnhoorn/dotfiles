@@ -3,4 +3,6 @@ My vim config and plugins etc.
 When cloning to a new vim install, don't forget to add:
 runtime .vimrc to ~/.vimrc
 
-Also run install.py in bundle/YouCompleteMe
+Run install.py in bundle/YouCompleteMe
+
+Install https://github.com/powerline/fonts for glyphs in airline and nerdtree
