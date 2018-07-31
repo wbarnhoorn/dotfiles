@@ -39,7 +39,6 @@ let g:pymode_options_colorcolumn = 0
 let g:pymode_python = 'python3'
 
 """ UltiSnips configuration
-
 let g:UltiSnipsExpandTrigger='<C-j>'
 let g:UltiSnipsJumpForwardTrigger='<C-j>'
 let g:UltiSnipsJumpBackwardTrigger='<C-k>'
