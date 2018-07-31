@@ -38,6 +38,13 @@ set ttimeoutlen=10
 let g:pymode_options_colorcolumn = 0
 let g:pymode_python = 'python3'
 
+""" UltiSnips configuration
+
+let g:UltiSnipsExpandTrigger='<C-j>'
+let g:UltiSnipsJumpForwardTrigger='<C-j>'
+let g:UltiSnipsJumpBackwardTrigger='<C-k>'
+let g:UltiSnipsEditSplit="vertical"
+
 "" Disable pymode rope completions so it doesn't clash with YouCompleteMe
 let g:pymode_rope = 0
 let g:pymode_rope_completion = 0
