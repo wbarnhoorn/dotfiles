@@ -25,7 +25,7 @@ set smartcase
 
 "" Color settings
 set t_Co=256
-colo mycontrast
+colo apprentice
 
 "" Some powerline options
 let g:airline_powerline_fonts = 1
