@@ -11,6 +11,13 @@ set autoread
 set so=5
 set wrap
 
+"" Word wrap etc.
+set wrap
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
+
 "" Auto indent and smart indent
 set ai
 set si
@@ -55,3 +62,4 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-n> :NERDTreeToggle<CR>
 autocmd FileType python nnoremap <buffer> <F8> :exec '!python' shellescape(@%, 1)<CR>
+autocmd BufRead,BufNewFile *.htm,*.html,*.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
