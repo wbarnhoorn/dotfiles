@@ -10,6 +10,7 @@ set mouse=a
 set autoread
 set so=5
 set wrap
+set splitbelow
 
 "" Word wrap etc.
 set wrap
